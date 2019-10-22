@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Finnemarka</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+    </head>
+    <body>
+        <div id="map" style="height: 800px; width: 900px;"></div>
+        <script>
+            var map = L.map('map').setView([59.865434, 10.064787], 11);
+            L.tileLayer('https://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=topo4&zoom={z}&x={x}&y={y}', {
+                attribution: '<a href="http://www.kartverket.no/">Kartverket</a>'
+            }).addTo(map);
+        </script>
+    </body>
+</html>
